@@ -1,0 +1,189 @@
+/* 
+  Localizable.strings
+  ShowMuse
+
+  Created by show zh on 16/6/8.
+  Copyright © 2016年 show zh. All rights reserved.
+*/
+
+//Login And Register
+
+//导航页
+//"LAUNCH_ONE" = "ENp1";
+"LAUNCH_ONE" = "英1.jpg";
+"LAUNCH_TWO" = "英2.jpg";
+"LAUNCH_THREE" = "英3.jpg";
+"LAUNCH_FOUR" = "英4.jpg";
+
+
+//登录、注册、引导页
+"LOGIN" = "Login";
+"ON_ACCOUNT" = "No account?";
+"REGISTRATION" = "Registration";
+"LOGIN_EMAIL" = "Email";
+"LOGIN_PASSWORD" = "Password";
+"LOGIN_USER_OTHER_LOGIN" = "Use other login";
+"LOGIN_FORGET_PASSWORD" = "Forget Password?";
+"LOGIN_REGISTER_AN_ACCOUNT" = "Register an account";
+"LOGIN_SKIP" = "Skip";
+"LOGIN_EMAIL_IS_NOT_CORRECT" = "Email address is not correct";
+"LOGIN_REGISTRATION" = "Registration";
+"LOGIN_REGISTER_NOW" = "Register Now";
+"LOGIN_RESET_PASSWORD" = "Reset Password";
+"LOGIN_EMAIL_CONFIRMATION" = "Email Confirmation";
+//"REGISTER_POPUP_EMAIL_PASSWORD" = "Please input email and password";
+//"REGISTER_POPUP_EMAIL_NOT_CORRECT" = "Email address is not correct";
+"REGISTER_POPUP_EMAIL_PASSWORD" = "Please input email and password";
+//"REGISTER_POPUP_EMAIL_NOT_CORRECT" = "Email address is not correct";
+//搜索
+"SEARCH" = "Search";
+"SEARCH_CANCEL" = "Cancel";
+"NO_SEARCH_RESULT" = "No search result";
+
+
+
+//Main Page
+"MAIN_PAGE_MY_QUESTION" = "ShowMuse";
+"MAIN_PAGE_NEW_QUESTION" = "Topics";
+"MAIN_PAGE_MASTER" = "Guru";
+"MAIN_CLOSE_BANNER" = "Skip";
+"MAIN_TEACHER_GURU_LIST" = "Guru list";
+"MAIN_TEACHER_TOP_BTN" = "Popular";
+"MAIN_TEACHER_NEW_BTN" = "Date";
+"MAIN_TEACHER_NO1" = "Popularity No 1";
+"MAIN_TEACHER_NO2" = "Popularity No 2";
+"MAIN_TEACHER_NO3" = "Popularity No 3";
+
+
+// left Menu
+"LEFT_MENU_MESSAGE" = "Message";
+"LEFT_MENU_SETTINGS" = "Settings";
+"LEFT_MENU_SUBSCRIPTION" = "Subscription";
+"LEFT_MENU_TEACHER" = "Be a Guru";
+"LEFT_MENU_DOWNLOAD_MANAGER" = "Download Manager";
+"YOU_CAN_ONLY_ACCESS_AFTER_SUBSCRIPTION" = "You can only access after subscription";
+"CLICK_PROFILE_GO_HOMEPAGE" = "Click the profile picture to go to personal page";
+
+// system settings
+"SYSTEM_SETTINGS_SETTING" = "Setting";
+"SYSTEM_SETTINGS_SUBTITLE" = "Subtitle";
+"SYSTEM_SETTINGS_CLEAR_CACHE" = "Clear cache";
+"SYSTEM_SETTINGS_FAQ" = "FAQ";
+"SYSTEM_SETTINGS_MARITAL_STATUS" = "Marital Status";
+"SYSTEM_SETTINGS_MARITAL_EDUCATION" = "Education";
+"SYSTEM_SETTINGS_LOGOUT" = "Logout";
+"SYSTEM_SETTINGS_PROMOTIONAL_CODE" = "Promotional code";
+"SYSTEM_SETTINGS_VERSION" = "Version";
+"SYSTEM_SETTINGS_PROMOTIONAL_CODE_ALERTVIEW_TITLE" = "Input the Promotional Code";
+"SYSTEM_SETTINGS_RATE_THIS_APP" = "Rate this App";
+"SYSTEM_SETTINGS_TERMS_CONDITIONS" = "Terms & Conditions";
+"SYSTEM_SETTINGS_USER_FEEDBACK" = "User feedback";
+"SYSTEM_SETTINGS_LANGUAGE" = "Language setting";
+"SYSTEM_SETTINGS_AUTO_PLAY" = "Auto Play(WIFI)";
+
+// Lessons Page
+"LESSONS_PAGE_LESSONS" = "Lessons";
+"LESSONS_PAGE_MAJOR" = "Major";
+"LESSONS_PAGE_MINOR" = "Minor";
+"LESSONS_DONE" = "Done";
+
+//Lessons Details Page
+"LESSONS_DETAILS_PAGE_DETAILS" = "Details";
+"LESSONS_DETAILS_PAGE_SHARE" = "Share";
+"LESSONS_DETAILS_PAGE_TAG" = "Tag";
+"LESSONS_DETAILS_PAGE_MATERIAL" = "Article Links";
+"LESSONS_DETAILS_PAGE_RECOMMENDED_VIDEOS" = "Recommended Videos";
+"LESSONS_DETAILS_PAGE_COMMENTS" = "Comments";
+"LESSONS_DETAILS_PAGE_SEND" = "Send";
+"LESSONS_DETAILS_PAGE_SHOP" = "Shop";
+"LEST_IS_LEARN_ON_SHOWMUSE" = "Let's learn on ShowMuse！";
+"LESSONS_DETAILS_SHARE_SUCCESS" = "Share Success";
+"LESSONS_DETAILS_SHARE_FAILED" = "Share Failed";
+"YOU_CAN_ONLY_DOWNLOAD_AFTER_SUBSCRIPTION" = "You can only download after subscription";
+"YOU_CAN_ONLY_DOWNLOAD_X_" = "You can only download ";
+"X_VIDEOS" = " videos";
+"YOU_ARE_USING_MOBILE_NETWORK" = "You are using mobile network";
+"THIS_IS_TRAILER" = "This is a trailer, please subscribe to watch full length";
+"SUBSCRIBE_COLOR" = "subscribe";
+"LESSONS_DETAILS_REPLY" = "Reply:";
+
+// User Center Page
+"USER_CENTER_PAGE_MY_TOPICS" = "My Topics";
+"USER_CENTER_PAGE_MY_BADGES" = "My Badges";
+"USER_CENTER_PAGE_RECORDS" = "Records";
+
+// Edit ProFile Page
+"EDIT_PROFILE_PAGE_EDIT_PROFILE" = "Edit Profile";
+"EDIT_PROFILE_PAGE_PROFILE_PICTURE" = "Profile Picture";
+"EDIT_PROFILE_PAGE_USER_NAME" = "User Name";
+"EDIT_PROFILE_PAGE_GENDER" = "Gender";
+"EDIT_PROFILE_PAGE_DATE_OF_BIRTH" = "Date of Birth";
+"EDIT_PROFILE_PAGE_MARITAL_STATUS" = "Country";
+"EDIT_PROFILE_PAGE_EDUCATION" = "Education";
+"EDIT_PROFILE_PAGE_MALE" = "M";
+"EDIT_PROFILE_PAGE_FEMALE" = "F";
+"EDIT_PROFILE_PAGE_FILL_IN" = "Fill in";
+"EDIT_PROFILE_PAGE_CANCEL" = "Cancel";
+"EDIT_PROFILE_PAGE_DONE" = "Done";
+"EDIT_PROFILE_PAGE_SINGLE" = "Single";
+"EDIT_PROFILE_PAGE_MARRIED" = "Married";
+"EDIT_PROFILE_PAGE_DIVORCED" = "Divorced";
+"EDIT_PROFILE_PAGE_PRIMARY" = "Primary";
+"EDIT_PROFILE_PAGE_SECONDARY" = "Secondary";
+"EDIT_PROFILE_PAGE_UNIVERSITY" = "University";
+"EDIT_PROFILE_PAGE_OTHERS" = "Others";
+"EDIT_PROFILE_PAGE_SAVED" = "Saved";
+"EDIT_PROFILE_PAGE_SAVEBTN" = "save";
+//我的徽章界面
+"USER_BADGES_GIFT" = "Gift";
+"USER_BADGES_STUDY" = "Study";
+
+// records
+"RECORDS_1_MONTH_FEE" = "1 month membership fee";
+"RECORDS_3_MONTHS_FEE" = "3 months membership fee";
+"RECORDS_6_MONTHS_FEE" = "6 months membership fee";
+"SUBSCRIBE_NOW" = "No record. Subscribe now!";
+
+// Member AlertView
+"MEMBER_ALERTVIEW_MEMBER_SUBSCRIPTION" = "Member Subscription";
+
+// Purchase Page
+"PURCHASE_PAGE_SUBSCRIBE_NOW" = "Subscribe Now";
+"PURCHASE_PAGE_SUBSCRIPTION" = "Subscription";
+"PURCHASE_PAGE_SUBSCRIBE" = "Pay";
+"PAY_FOR_SUCCESS" = "Pay for success";
+"PAY_FOR_FAILURE" = "Pay for failure";
+
+// Global AlertView
+"GLOBAL_ALERTVIEW_PAID_BY" = "Payment by:";
+"GLOBAL_ALERTVIEW_CANCEL" = "Cancel";
+"GLOBAL_ALERTVIEW_CONFIRM" = "Confirm";
+"NO_INTERNET_CONNECTION" = "No internet connection or the connection is bad, please try later";
+
+// Download Page
+"DOWNLOAD_PAGE_TITLE" = "Download";
+"DOWNLOAD_PAGE_EDIT" = "Edit";
+"DOWNLOAD_PAGE_DONE" = "Done";
+"DOWNLOAD_PAGE_DOWNLOADED" = "Downloaded";
+"DOWNLOAD_PAGE_DOWNLOADING" = "Downloading";
+"DOWNLOAD_PAGE_STOPALL" = "Stop All";
+"DOWNLOAD_PAGE_BEGINALL" = "Begin All";
+"DOWNLOAD_PAGE_SELECTALL" = "Select All";
+"DOWNLOAD_PAGE_DELETE" = "Delete";
+"DOWNLOAD_PAGE_WAITING" = "Waiting";
+"DOWNLOAD_PAGE_PAUSE" = "Pause";
+"DOWNLOAD_PAGE_ERROR" = "Error";
+
+//Video Player Page
+"VIDEO_PLAYER_PAGE_BRIGHTNESSVIEW" = "Brightness";
+
+// WebView 頁面
+"WEBVIEW_PAGE_CLOSE" = "Close";
+"WEBVIEW_PAGE_BACK" = "Back";
+
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+//
+//  PrefixHeader-SM.pch
+//  ShowMuse
+//
+//  Created by liuyonggang on 26/5/2016.
+//  Copyright © 2016 show zh. All rights reserved.
+//
+
+#ifndef PrefixHeader_SM_pch
+#define PrefixHeader_SM_pch
+
+#import "UIView+YGExtension.h"
+#import "UIColor+SMExtension.h"
+#import "UIImage+SMExtension.h"
+#import "WXApi.h"
+#import "WXApiObject.h"
+#import "SMNavigationController.h"
+#import <tingyunApp/NBSAppAgent.h>
+#import "NumberStr.h"
+#import "SMProjectConst.h"
+#import "SMNetWork.h"
+#import "MBProgressHUD.h"
+
+#import "ACLanguageUtil.h"
+
+#if TARGET_VERSION_LITE ==1
+//发布
+#define TINGYUNAPP_KEY @"2c1b5675b3c4420c85adfafdc76ba47e"
+#define JPUSHAPP_KEY @"eac2ef6bb9c4a586eebe95cc"
+static NSString* const HOST = @"http://api.showmuse.so";
+static NSString * const PiwikServerURL = @"http://stat.showmuse.so/";
+static NSString * const PiwikSiteID = @"3";
+
+#elif TARGET_VERSION_LITE ==2
+//测试 Stage
+#define TINGYUNAPP_KEY @"d269a3c8569f47ce94d0458849b3f767"
+#define JPUSHAPP_KEY @"40bfd8e8e68048673b73ee45"
+static NSString* const HOST = @"http://api.stage.showmuse.so";
+static NSString * const PiwikServerURL = @"http://stat.showmuse.so/";
+static NSString * const PiwikSiteID = @"4";
+
+#elif TARGET_VERSION_LITE ==3
+//测试 DEV
+#define TINGYUNAPP_KEY @"d269a3c8569f47ce94d0458849b3f767"
+#define JPUSHAPP_KEY @"f8acdc4f8cfa2154a747a9dc"
+static NSString* const HOST = @"http://api.dev.showmuse.so";
+static NSString * const PiwikServerURL = @"http://stat.showmuse.so/";
+static NSString * const PiwikSiteID = @"4";
+
+#endif
+
+
+#ifdef DEBUG// 调试状态, 打开LOG功能
+#define SMLog(...) NSLog(__VA_ARGS__)
+#else// 发布状态, 关闭LOG功能
+#define SMLog(...)
+#endif
+
+// 屏幕的高度
+#define SMScreenHeight [UIScreen mainScreen].bounds.size.height
+// 屏幕的宽度
+#define SMScreenWidth [UIScreen mainScreen].bounds.size.width
+/**
+ *  用户bookmarks数量通知
+ */
+static NSString *const SMVideoPlayBookmarkCountNotification = @"VideoPlayBookmarkCountNotification";
+
+static NSString *const SMVideoPlayPopupQuestionNotification = @"SMVideoPlayPopupQuestionNotification";
+
+static NSString *const SMLocalVideoBeginPlayNotification = @"SMLocalVideoBeginPlayNotification";
+
+static NSString *const SMHomePageLoadNewDataDoneNotification = @"SMHomePageLoadNewDataDoneNotification";
+
+static NSString *const SMSettingsViewGetCodeNotification = @"SMSettingsViewGetCodeNotification";
+
+static NSString *const SMVIPShopPurchaseSuccessNotification = @"SMVIPShopPurchaseSuccessNotification";
+
+static NSString *const SMDownloadStopAllOrStartAllNotification = @"SMDownloadStopAllOrStartAllNotification";
+
+static NSString *const SMSubscribeAMemberShipNotification = @"SMSubscribeAMemberShipNotification";
+
+#define colorWithRGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+
+#define colorWithRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/1]
+
+#define APP_ID  @"wxb4ba3c02aa476ea1"
+#define APP_SECRET      @"这里填写你获取的微信AppSecret" //微信appsecret
+#define NOTIFY_URL      @"这里填写后台给你的微信支付的后台接口网址"
+//通知的名字及参数
+#define WX_PAY_RESULT   @"weixin_pay_result"
+#define IS_SUCCESSED    @"wechat_pay_isSuccessed"
+#define IS_FAILED       @"wechat_pay_isFailed"
+
+
+#endif /* PrefixHeader_SM_pch */

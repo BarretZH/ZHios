@@ -1,0 +1,36 @@
+
+target 'ShowMuse' do
+    pod 'ShareSDK3'
+    pod 'MOBFoundation'
+    pod 'ShareSDK3/ShareSDKUI'
+    pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+    pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+    pod 'MJRefresh'
+    pod 'XCDYouTubeKit', '~> 2.5'
+    pod 'tingyunApp'
+    pod 'ZFDownload'
+end
+
+target 'Dev' do
+    pod 'ShareSDK3'
+    pod 'MOBFoundation'
+    pod 'ShareSDK3/ShareSDKUI'
+    pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+    pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+    pod 'MJRefresh'
+    pod 'XCDYouTubeKit', '~> 2.5'
+    pod 'tingyunApp'
+    pod 'ZFDownload'
+end
+
+target 'Stage' do
+    pod 'ShareSDK3'
+    pod 'MOBFoundation'
+    pod 'ShareSDK3/ShareSDKUI'
+    pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+    pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+    pod 'MJRefresh'
+    pod 'XCDYouTubeKit', '~> 2.5'
+    pod 'tingyunApp'
+    pod 'ZFDownload'
+end

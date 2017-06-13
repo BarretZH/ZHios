@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
+            <connections>
+                <outlet property="cancelButton" destination="4mB-6x-iIr" id="yNg-F8-28W"/>
+                <outlet property="searchTextField" destination="Ar4-Kp-rCe" id="rhV-4s-JTV"/>
+                <outlet property="tableView" destination="3YE-lf-XuB" id="2Mo-d0-qgp"/>
+                <outlet property="txtLabel" destination="rok-xq-wVj" id="cS4-KI-xfV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3n-Wv-0yI">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mB-6x-iIr">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="49" id="Pb3-Zc-Qr2"/>
+                                <constraint firstAttribute="height" constant="30" id="VOD-8D-w1a"/>
+                            </constraints>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="gotoBack:" destination="-1" eventType="touchUpInside" id="fXw-P0-VkZ"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Xb-Wc-0nD">
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="搜索问题视频" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ar4-Kp-rCe">
+                                    <frame key="frameInset" minX="29" minY="4" width="218" height="22"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="C9s-kt-rCN"/>
+                                    </connections>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search_small.png" translatesAutoresizingMaskIntoConstraints="NO" id="q9y-Qc-KM2">
+                                    <frame key="frameInset" minX="5" minY="7" width="15" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QY-3i-iwa">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="fJy-hp-bPo"/>
+                                        <constraint firstAttribute="width" constant="15" id="x72-8k-dnn"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="search_delete.png"/>
+                                    <connections>
+                                        <action selector="deleteTextFieldButton:" destination="-1" eventType="touchUpInside" id="ElY-e3-ptu"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="7QY-3i-iwa" secondAttribute="trailing" constant="5" id="9II-OW-q6c"/>
+                                <constraint firstAttribute="height" constant="30" id="9cS-p0-A7c"/>
+                                <constraint firstItem="7QY-3i-iwa" firstAttribute="top" secondItem="6Xb-Wc-0nD" secondAttribute="top" constant="7" id="XKy-Uh-ciF"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.42745098039215684" green="0.85098039215686272" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="6Xb-Wc-0nD" firstAttribute="top" secondItem="C3n-Wv-0yI" secondAttribute="top" constant="24" id="3wC-w3-5Ur"/>
+                        <constraint firstItem="6Xb-Wc-0nD" firstAttribute="leading" secondItem="C3n-Wv-0yI" secondAttribute="leading" constant="40" id="EUb-YI-Qmn"/>
+                        <constraint firstItem="4mB-6x-iIr" firstAttribute="leading" secondItem="6Xb-Wc-0nD" secondAttribute="trailing" constant="11" id="FgD-6h-Jo0"/>
+                        <constraint firstItem="4mB-6x-iIr" firstAttribute="top" secondItem="C3n-Wv-0yI" secondAttribute="top" constant="25" id="nkR-H8-Qh0"/>
+                        <constraint firstAttribute="height" constant="64" id="xoa-0p-vMQ"/>
+                        <constraint firstAttribute="trailing" secondItem="4mB-6x-iIr" secondAttribute="trailing" constant="10" id="zua-40-0rD"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rok-xq-wVj">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="179" id="F2f-4A-ehD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="124" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3YE-lf-XuB">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="LDT-SK-YGz"/>
+                        <outlet property="delegate" destination="-1" id="pE3-Ve-2Lg"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3YE-lf-XuB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1jh-3p-DxE"/>
+                <constraint firstItem="rok-xq-wVj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="G6h-ce-byI"/>
+                <constraint firstAttribute="trailing" secondItem="3YE-lf-XuB" secondAttribute="trailing" id="Hzz-7X-Q7m"/>
+                <constraint firstAttribute="trailing" secondItem="C3n-Wv-0yI" secondAttribute="trailing" id="J9o-VD-TiU"/>
+                <constraint firstItem="C3n-Wv-0yI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JhV-rX-kfx"/>
+                <constraint firstAttribute="bottom" secondItem="3YE-lf-XuB" secondAttribute="bottom" id="SAF-aO-Qwn"/>
+                <constraint firstItem="3YE-lf-XuB" firstAttribute="top" secondItem="C3n-Wv-0yI" secondAttribute="bottom" id="c7Y-lm-w34"/>
+                <constraint firstItem="C3n-Wv-0yI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eoo-WM-sI7"/>
+                <constraint firstItem="rok-xq-wVj" firstAttribute="top" secondItem="C3n-Wv-0yI" secondAttribute="bottom" constant="85" id="i4p-Zm-maY"/>
+                <constraint firstAttribute="trailing" secondItem="rok-xq-wVj" secondAttribute="trailing" id="rEQ-ZR-2e6"/>
+            </constraints>
+            <point key="canvasLocation" x="182.5" y="316.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search_delete.png" width="19" height="19"/>
+        <image name="search_small.png" width="19" height="19"/>
+    </resources>
+</document>

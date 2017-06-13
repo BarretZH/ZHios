@@ -1,0 +1,43 @@
+//
+//  MLIAPManager.h
+//  MLIAPurchaseManager
+//
+//  Created by mali on 16/5/14.
+//  Copyright © 2016年 mali. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <StoreKit/StoreKit.h>
+#import "SMSingleton.h"
+
+@protocol MLIAPManagerDelegate <NSObject>
+
+@optional
+
+- (void)receiveProduct:(SKProduct *)product;
+
+- (void)successfulPurchaseOfId:(NSString *)productId andReceipt:(NSData *)transactionReceipt;
+
+- (void)failedPurchaseWithError:(NSString *)errorDescripiton;
+
+
+@end
+
+
+@interface MLIAPManager : NSObject
+
+@property (nonatomic, assign)id<MLIAPManagerDelegate> delegate;
+
+
+//+ (instancetype)sharedManager;
+SMSingletonH(Manager);
+
+- (BOOL)requestProductWithId:(NSString *)productId;
+- (BOOL)purchaseProduct:(SKProduct *)skProduct;
+- (BOOL)restorePurchase;
+
+@end
+
+
+
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VIPShopViewController">
+            <connections>
+                <outlet property="promptLabel" destination="4A8-V8-GiZ" id="Gzy-KX-FXn"/>
+                <outlet property="tableView" destination="30K-Wj-P2m" id="bqb-vW-XCX"/>
+                <outlet property="titleLabel" destination="Zkx-eG-wfB" id="6UJ-v6-wGX"/>
+                <outlet property="userImage" destination="rlO-Q6-F5c" id="W7d-Zi-qfD"/>
+                <outlet property="userNameLabel" destination="LVW-Dd-A8b" id="Jjj-G6-aKd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userpage_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="wim-4r-jeP">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="ROW-Fg-fpy"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4A8-V8-GiZ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="t54-hZ-gsK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                    <color key="textColor" red="0.18431372549019609" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIP会员套餐" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkx-eG-wfB">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="iT1-8w-x02"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.25490196078431371" green="0.77647058823529413" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="30K-Wj-P2m">
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="o5Q-4u-WoF"/>
+                        <outlet property="delegate" destination="-1" id="qYz-dk-vGe"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名字" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVW-Dd-A8b">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="8VT-T8-XjE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vad-Uo-XXJ">
+                    <color key="backgroundColor" red="0.69803921570000005" green="0.90196078430000004" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="j6I-f5-rXj"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rlO-Q6-F5c">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="BtR-WN-0f8"/>
+                        <constraint firstAttribute="width" constant="70" id="HE9-Tw-Vh5"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="35"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="30K-Wj-P2m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="19F-wy-OB8"/>
+                <constraint firstAttribute="trailing" secondItem="Zkx-eG-wfB" secondAttribute="trailing" constant="53" id="2Ox-MY-wSU"/>
+                <constraint firstAttribute="trailing" secondItem="wim-4r-jeP" secondAttribute="trailing" id="3tC-ee-ncK"/>
+                <constraint firstItem="vad-Uo-XXJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="5l3-tp-1Wq"/>
+                <constraint firstItem="LVW-Dd-A8b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="6pS-3a-mbo"/>
+                <constraint firstAttribute="bottom" secondItem="30K-Wj-P2m" secondAttribute="bottom" id="6uL-8p-xuo"/>
+                <constraint firstItem="4A8-V8-GiZ" firstAttribute="top" secondItem="LVW-Dd-A8b" secondAttribute="bottom" constant="3" id="94z-4p-gqy"/>
+                <constraint firstItem="wim-4r-jeP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Awc-ka-aiy"/>
+                <constraint firstItem="LVW-Dd-A8b" firstAttribute="top" secondItem="rlO-Q6-F5c" secondAttribute="bottom" constant="3" id="DMw-e7-EPa"/>
+                <constraint firstAttribute="trailing" secondItem="30K-Wj-P2m" secondAttribute="trailing" id="FZz-MD-gxY"/>
+                <constraint firstItem="rlO-Q6-F5c" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Jdf-vK-b2x"/>
+                <constraint firstAttribute="trailing" secondItem="vad-Uo-XXJ" secondAttribute="trailing" constant="15" id="L9l-YI-Scp"/>
+                <constraint firstItem="Zkx-eG-wfB" firstAttribute="top" secondItem="wim-4r-jeP" secondAttribute="bottom" constant="14" id="M9t-Pv-VIb"/>
+                <constraint firstAttribute="trailing" secondItem="LVW-Dd-A8b" secondAttribute="trailing" constant="36" id="OIb-3X-InJ"/>
+                <constraint firstItem="vad-Uo-XXJ" firstAttribute="top" secondItem="Zkx-eG-wfB" secondAttribute="bottom" constant="14" id="SUm-I8-jzc"/>
+                <constraint firstItem="Zkx-eG-wfB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="TRW-DT-WwD"/>
+                <constraint firstItem="30K-Wj-P2m" firstAttribute="top" secondItem="vad-Uo-XXJ" secondAttribute="bottom" id="VmC-iG-oLJ"/>
+                <constraint firstItem="4A8-V8-GiZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="h2E-4k-lpl"/>
+                <constraint firstItem="rlO-Q6-F5c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="26" id="p2P-kL-uap"/>
+                <constraint firstAttribute="trailing" secondItem="4A8-V8-GiZ" secondAttribute="trailing" constant="36" id="sOZ-qz-LRf"/>
+                <constraint firstItem="wim-4r-jeP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zel-xN-mMl"/>
+            </constraints>
+            <point key="canvasLocation" x="159.5" y="160.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="userpage_background.png" width="14" height="14"/>
+    </resources>
+</document>
